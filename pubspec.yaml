@@ -1,0 +1,75 @@
+name: moomingle
+description: A hackathon-grade production demo for the Moomingle app.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # State management
+  provider: ^6.0.5
+  # Networking
+  http: ^1.1.0
+  # Supabase
+  supabase_flutter: ^2.3.0
+  # Formatting (Currency, etc.)
+  intl: ^0.18.1
+  # For looking good
+  cupertino_icons: ^1.0.6
+  cached_network_image: ^3.3.0
+  image_picker: ^1.0.4
+  url_launcher: ^6.2.1
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  share_plus: ^7.2.1
+  # Camera for breed scanner
+  camera: ^0.10.5+9
+  # Local storage for settings
+  shared_preferences: ^2.2.2
+  # Video player for splash screen
+  video_player: ^2.8.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_native_splash: ^2.4.7
+  flutter_launcher_icons: ^0.14.4
+
+# App Icon Configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  adaptive_icon_background: "#F5E0C3"
+  adaptive_icon_foreground: "assets/images/app_icon.png"
+  web:
+    generate: true
+    image_path: "assets/images/app_icon.png"
+    background_color: "#F5E0C3"
+    theme_color: "#8B5A2B"
+  windows:
+    generate: true
+    image_path: "assets/images/app_icon.png"
+  macos:
+    generate: true
+    image_path: "assets/images/app_icon.png"
+
+# Splash Screen Configuration
+flutter_native_splash:
+  color: "#F5E0C3"
+  image: "assets/images/app_icon.png"
+  android_12:
+    color: "#F5E0C3"
+    image: "assets/images/app_icon.png"
+  ios: true
+  web: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/videos/

@@ -1,0 +1,6 @@
+name,breed,animal_type,price,age,yield_amount,location,seller_name,image_url,is_verified
+Royal Murrah,Murrah,Buffalo,85000,4 Years,18L / Day,"Rohtak, Haryana",Ramesh Kumar,https://example.com/murrah1.jpg,false
+Gir Queen,Gir,Cattle,120000,3 Years,16L / Day,"Junagadh, Gujarat",Suresh Patel,https://example.com/gir1.jpg,true
+Mehsana Pride,Mehsana,Buffalo,95000,5 Years,15L / Day,"Mehsana, Gujarat",Amit Shah,https://example.com/mehsana1.jpg,false
+Sahiwal Star,Sahiwal,Cattle,110000,4 Years,14L / Day,"Fazilka, Punjab",Gurpreet Singh,https://example.com/sahiwal1.jpg,true
+Jaffarbadi Giant,Jaffarbadi,Buffalo,150000,6 Years,20L / Day,"Junagadh, Gujarat",Mahesh Bhatt,https://example.com/jaffarbadi1.jpg,false

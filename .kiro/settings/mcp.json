@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "render": {
+      "url": "https://mcp.render.com/sse",
+      "headers": {
+        "Authorization": "Bearer YOUR_RENDER_API_KEY"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
+
