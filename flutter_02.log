@@ -1,0 +1,109 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run -d chrome
+
+## exception
+
+ShaderCompilerException: ShaderCompilerException: Shader compilation of "/opt/homebrew/share/flutter/packages/flutter/lib/src/material/shaders/stretch_effect.frag" to "build/flutter_assets/shaders/stretch_effect.frag" failed with exit code 1.
+impellerc stdout:
+
+impellerc stderr:
+Could not write file to build/flutter_assets/shaders/stretch_effect.frag
+
+
+
+
+```
+#0      ShaderCompiler.compileShader (package:flutter_tools/src/build_system/tools/shader_compiler.dart:196:9)
+<asynchronous suspension>
+#1      writeBundle.<anonymous closure> (package:flutter_tools/src/bundle_builder.dart:208:25)
+<asynchronous suspension>
+#2      Future.wait.<anonymous closure> (dart:async/future.dart:546:21)
+<asynchronous suspension>
+#3      writeBundle (package:flutter_tools/src/bundle_builder.dart:171:3)
+<asynchronous suspension>
+#4      WebDevFS.update (package:flutter_tools/src/isolated/devfs_web.dart:336:9)
+<asynchronous suspension>
+#5      ResidentWebRunner._updateDevFS (package:flutter_tools/src/isolated/resident_web_runner.dart:785:35)
+<asynchronous suspension>
+#6      ResidentWebRunner.run.<anonymous closure> (package:flutter_tools/src/isolated/resident_web_runner.dart:326:41)
+<asynchronous suspension>
+#7      asyncGuard.<anonymous closure> (package:flutter_tools/src/base/async_guard.dart:108:24)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, 3.38.4, on macOS 26.1 25B78
+    darwin-arm64, locale en-IN) [112ms]
+    [32m•[39m Flutter version 3.38.4 on channel stable at
+      /opt/homebrew/share/flutter
+    [32m•[39m Upstream repository
+      https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision 66dd93f9a2 (10 days ago),
+      2025-12-03 14:56:10 -0800
+    [32m•[39m Engine revision a5cb96369e
+    [32m•[39m Dart version 3.10.3
+    [32m•[39m DevTools version 2.51.1
+    [32m•[39m Feature flags: enable-web, enable-linux-desktop,
+      enable-macos-desktop, enable-windows-desktop,
+      enable-android, enable-ios, cli-animations,
+      enable-native-assets, omit-legacy-version-file,
+      enable-lldb-debugging
+
+[31m[✗][39m Android toolchain - develop for Android devices
+    [54ms]
+    [31m✗[39m Unable to locate Android SDK.
+      Install Android Studio from:
+      https://developer.android.com/studio/index.html
+      On first launch it will assist you in installing
+      the Android SDK components.
+      (or visit
+      https://flutter.dev/to/macos-android-setup for
+      detailed instructions).
+      If the Android SDK has been installed to a custom
+      location, please use
+      `flutter config --android-sdk` to update to that
+      location.
+
+
+[31m[✗][39m Xcode - develop for iOS and macOS [76ms]
+    [31m✗[39m Xcode installation is incomplete; a full
+      installation is necessary for iOS and macOS
+      development.
+      Download at: https://developer.apple.com/xcode/
+      Or install Xcode via the App Store.
+      Once installed, run:
+        sudo xcode-select --switch
+        /Applications/Xcode.app/Contents/Developer
+        sudo xcodebuild -runFirstLaunch
+    [31m✗[39m CocoaPods not installed.
+        CocoaPods is a package manager for iOS or macOS
+        platform code.
+        Without CocoaPods, plugins will not work on iOS
+        or macOS.
+        For more info, see
+        https://flutter.dev/to/platform-plugins
+      For installation instructions, see
+      https://guides.cocoapods.org/using/getting-started.
+      html#installation
+
+[32m[✓][39m Chrome - develop for the web [27ms]
+    [32m•[39m Chrome at /Applications/Google
+      Chrome.app/Contents/MacOS/Google Chrome
+
+[32m[✓][39m Connected device (2 available) [48ms]
+    [32m•[39m macOS (desktop) • macos  • darwin-arm64   • macOS
+      26.1 25B78 darwin-arm64
+    [32m•[39m Chrome (web)    • chrome • web-javascript • Google
+      Chrome 143.0.7499.41
+
+[32m[✓][39m Network resources [1,297ms]
+    [32m•[39m All expected network resources are available.
+
+[33m![39m Doctor found issues in 2 categories.
+```
